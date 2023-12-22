@@ -3,16 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="StartSFS"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1.5in"
+        android:text="@string/button1"
+        tools:ignore="InOrMmUsage,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="DownloadSFS"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button2" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:text="@string/SFSVersion" />
 
+    <Button
+        android:id="@+id/button3"
+        android:onClick="About"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button3"
+        tools:ignore="DuplicateIds" />
 </LinearLayout>

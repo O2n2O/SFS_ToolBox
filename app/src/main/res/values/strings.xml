@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SFS ToolBox</string>
+    <string name="button1">打开游戏</string>
+    <string name="button2">下载游戏</string>
+    <string name="button3">关于</string>
+    <string name="SFSVersion">云端版本：0.0.0</string>
 </resources>
